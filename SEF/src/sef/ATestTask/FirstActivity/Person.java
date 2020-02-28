@@ -5,50 +5,67 @@ public class Person {
 
 //TODO 1 Implement Person Attributes
 
-	//Behavior - default constructor
-	public Person(){
-		this.firstName="Unknown";
-		this.secondName = "Unknown";
-		this.age = 0;
-	}
+
+		//Attributes
+		public String firstName;
+		public String secondName;
+		public int age;
+
+		//Behavior - default constructor
+		public Person() {
+			this.firstName = "Unknown";
+			this.secondName = "Unknown";
+			this.age = 0;
+			System.out.println("My name is" + firstName + " " + "and i am" + age + " years old"); // Called when creating a Person instance
+		}
+
+
 
 	//Behavior - parameterized constructor
-	public Person(String firstName, String secondName, int age){
-		this.firstName = firstName;
-		this.secondName = secondName;
-		this.age = age;
+		public Person(String firstName, String secondName, int age){
+			this.firstName = firstName;
+			this.secondName = secondName;
+			this.age = age;
 	}
 
 	// getter for String firstName
-	public String getFirstName() {
-		return firstName;
+		public String getFirstName() {
+			return firstName;
 	}
 
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
+		public void setFirstName(String firstName) {
+			this.firstName = firstName;
 	}
 
 	// getter for int age
-	public int getAge() {
-		return age;
+		public int getAge() {
+			return age;
 	}
 
 	// setter for int age
-	public void setAge(int age) {
-		this.age = age;
+		public void setAge(int age) {
+			this.age = age;
 	}
 
-	public String getSecondName() {
-		return secondName;
+		public String getSecondName() {
+			return secondName;
 	}
 
-	public void setSecondName(String secondName) {
-		this.secondName = secondName;
+		public void setSecondName(String secondName) {
+			this.secondName = secondName;
 	}
 
 	//TODO 2 add all person info into announce() method
-	public String announce() {
-		return "I am " + getFirstName() + " " + getSecondName();
+		public void announce(){
+			System.out.println("I am " + getFirstName() + " " + getSecondName() + " " + "and I am" + age + " " + "years old");
 	}
+
+
+	}
+
+
+
+
+
 }
 
