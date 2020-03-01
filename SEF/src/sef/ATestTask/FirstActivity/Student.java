@@ -1,4 +1,4 @@
-package sef.ATestTask.FirstActivity;
+package SEF.src.sef.ATestTask.FirstActivity;
 
 
 //TODO Implement class Student with parent Person
@@ -11,7 +11,7 @@ public class Student extends Person{
     //Behavior - default constructor
     public Student(){
         this.schoolName = "Unknown";
-        System.out.println("I am study in university" + schoolName);
+
     }
 
     // getter for String school
@@ -23,4 +23,9 @@ public class Student extends Person{
     public void setSchoolName(String schoolName) {
         this.schoolName = schoolName;
     }
+
+    public void announce(){
+        System.out.println("I am study in university " + schoolName);
+    }
+
 }
